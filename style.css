@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, .project, .navItem, .blog, .profileImg {
+  text-align: center;
+}
+
+.title, .subtitle {
+  color: black;
+}
+
+.about, .blog {
+  background-color: rgb(3, 130, 66);
+  display: flex;
+  margin: 0 15%;
+  padding: 1em;
+}
+
+.about div {
+  flex: 1 1 50%;
+}
+
+.about h2 {
+  text-align: left;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.profileImg {
+  margin: 1em auto;
+}
+
+.profileImg img {
+  border-radius: 50%;
+  height: 12em;
+}
+
+.projects {
+  color: black;
+  margin: 0 15%;
+}
+
+.projectsGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  flex: 1 1 33%;
+}
+
+.blog {
+  padding-bottom: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog a:hover {
+  transition: all 1s;
+  font-size: 1.25em;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  margin-left: -8px;
+}
+
+.footChunk {
+  display: flex;
+  flex: 0 0 33%;
+  margin-top: auto;
+  padding: 1em 2em;
+}
+
+.footChunk img {
+  height: 3em;
+  margin: 0 .5em;
+}
+
+.navItem {
+  flex: 1 1 33%;
+  margin-bottom: 1em;
+}
+
+.contact {
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
