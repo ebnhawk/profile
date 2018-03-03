@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Neucha', cursive;
   color: white;
+  background-color: black;
 }
 
 h1 {
@@ -17,8 +18,13 @@ h2 {
 }
 
 a {
-  color: white;
   text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+a:hover {
+  color: yellow;
 }
 
 img {
@@ -30,19 +36,31 @@ h1, h2, .project, .navItem, .blog, .profileImg {
   text-align: center;
 }
 
+.hero {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  margin: 1em 20%;
+  padding: 3em;
+  height: 30em;
+  border-radius: 10px;
+}
+
 .title, .subtitle {
-  color: black;
+  text-shadow: 2px 2px black;
+}
+
+.title {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 7em;
 }
 
 .about, .blog {
-  background-color: rgb(3, 130, 66);
+  background-color:rgba(236, 81, 145, .7);
   display: flex;
-  margin: 0 15%;
+  margin: 0 20%;
   padding: 1em;
-}
-
-.about div {
-  flex: 1 1 50%;
+  border-radius: 10px;
+  text-shadow: 2px 2px black;
 }
 
 .about h2 {
@@ -53,17 +71,8 @@ h1, h2, .project, .navItem, .blog, .profileImg {
   text-align: justify;
 }
 
-.profileImg {
-  margin: 1em auto;
-}
-
-.profileImg img {
-  border-radius: 50%;
-  height: 12em;
-}
-
 .projects {
-  color: black;
+
   margin: 0 15%;
 }
 
@@ -82,17 +91,12 @@ h1, h2, .project, .navItem, .blog, .profileImg {
   flex-direction: column;
 }
 
-.blog a:hover {
-  transition: all 1s;
-  font-size: 1.25em;
-}
-
 .foot {
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: gray;
   margin-left: -8px;
 }
 
@@ -100,7 +104,7 @@ h1, h2, .project, .navItem, .blog, .profileImg {
   display: flex;
   flex: 0 0 33%;
   margin-top: auto;
-  padding: 1em 2em;
+  padding: .3em 2em;
 }
 
 .footChunk img {
